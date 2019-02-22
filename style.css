@@ -50,7 +50,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
   /* font-size: 3vh; */
 }
@@ -75,12 +76,6 @@ header {
 #bio {
   width: 100%;
   min-height: 200px;
-}
-
-.container {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -90,4 +85,20 @@ header {
 
 #bio p {
   /* font-size: 110%; */
+}
+
+#portfolio {
+  background-color: rgb(0, 0, 255, 0.5);
+  width: 100%;
+}
+
+#portfolio > div > div {
+  color: red;
+  border: 1px solid red;
+  text-align: center;
+}
+
+footer {
+  height: 200px;
+  background-color: black;
 }
