@@ -8,13 +8,13 @@ body, html {
 }
 
 h1 { font-size: 500%; }
+.hasBorder {border: 1px solid yellow}
 
 header {
   width: 100%;
   margin: 0;
   min-height: 70px;
   color: white;
-  /* background: yellow; */
   position: fixed;
   top: 0;
   left: 0;
@@ -24,10 +24,18 @@ header {
   line-height: 2em;
 }
 
-#logo {
+.logo a {
   display: inline-block;
-  float: left;
+  /* float: left; */
+  text-decoration: none;
+  color: #fff;
 }
+
+.logo a:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
 
 #menu {
   display: inline-block;
@@ -57,7 +65,7 @@ header {
 }
 
 .hero-text button {
-  border: none;
+  border: 1px solid #ddd;
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
@@ -65,12 +73,13 @@ header {
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
-  /* font-size: 90%; */
+  border-radius: 5px;
 }
 
 .hero-text button:hover {
-  background-color: #555;
-  color: white;
+  /* background-color: #555; */
+  background: none;
+  color: #fff;
 }
 
 #bio {
@@ -81,7 +90,8 @@ header {
 }
 
 #portfolio {
-  background-color: rgb(0, 0, 0, 0.1);
+  background-color: rgb(241, 231, 137);
+  background-color: rgba(241, 231, 137, 0.5);
   width: 100%;
 }
 
@@ -106,13 +116,63 @@ header {
 }
 
 footer {
-  height: 100px;
+  min-height: 100px;
   width: 100%;
-  background-color: black;
+  margin: 0;
+  min-height: 70px;
+  background-color: #222;
   color: white;
-  padding: 2em;
+  line-height: 2em;
+  padding-top: 2%;
 }
 
 footer .container {
   width: 80%;
+}
+
+footer .logo a {
+  color: #111;
+  font-family: Coiny, sans-serif;
+  font-size: 8vh;
+}
+
+footer .logo a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+#menu-footer {
+  color: white;
+}
+
+#menu-footer ul, #menu-footer ul li {
+  margin-left: -40px;
+  padding-left: -40px;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 30px 0;
+  background-image: url('social-icons.jpg');
+  background-size: 1000%;
+}
+
+.facebook {
+  background-position: -280px -55px;
+}
+
+.instagram {
+  background-position: -170px -55px;
+}
+
+.twitter {
+  background-position: -55px -55px;
+}
+
+.linkedin {
+  background-position: -280px -278px;
 }
