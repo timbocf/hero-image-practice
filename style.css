@@ -173,6 +173,10 @@ footer .logo a:hover {
   background-size: 1000%;
 }
 
+a.social:hover {
+  opacity: 0.5;
+}
+
 .facebook {
   background-position: -280px -55px;
 }
