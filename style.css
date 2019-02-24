@@ -14,7 +14,7 @@ a, a:hover {
 }
 
 a:hover {
-  color: #ddd;
+  opacity: 0.8;
 }
 
 h1 { font-size: 500%; }
@@ -34,10 +34,9 @@ header {
   line-height: 2em;
 }
 
-.logo a {
-  /* display: inline-block; */
-  /* float: left; */
-  color: #fff;
+.logo a img {
+  width: 200px;
+  height: 75px;
 }
 
 .logo a:hover {
@@ -46,8 +45,6 @@ header {
 
 
 #menu {
-  /* display: inline-block; */
-  /* float: right; */
   bottom: -40px;
   color: white;
 }
@@ -171,10 +168,6 @@ footer .logo a:hover {
   margin: 30px auto;
   background-image: url('images/social-icons.jpg');
   background-size: 1000%;
-}
-
-a.social:hover {
-  opacity: 0.5;
 }
 
 .facebook {
