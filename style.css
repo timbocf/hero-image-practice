@@ -61,6 +61,7 @@ header {
   opacity: 0.8;
 }
 
+<<<<<<< HEAD
 header div {
   border: 1px solid white;
 }
@@ -68,6 +69,11 @@ header div {
 .topnav img {
   width: 10px;
   height: 10px;
+=======
+.topnav img {
+  width: 15px;
+  height: 15px;
+>>>>>>> refs/remotes/origin/master
 }
 
 .hero-image {
