@@ -61,9 +61,13 @@ header {
   opacity: 0.8;
 }
 
+header div {
+  border: 1px solid white;
+}
+
 .topnav img {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 
 .hero-image {
