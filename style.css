@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto');
 
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 }
@@ -13,17 +13,30 @@ a, a:hover {
   color: #fff;
 }
 
-a:hover {
-  opacity: 0.8;
+a:hover, .logo a:hover, .logo img:hover, #menu-footer img:hover {
+  opacity: 0.7;
+}
+
+h1, h2, h3, h4, h5, h6, strong, em {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 h1 { 
-  font-size: 500%; 
+  font-family: /* Josefin+Sans */;
+  font-size: 500%;
+  font-weight: bold;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: thin;
 }
 
 h5 {
   color: #ffd700;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 150%;
 }
 
 header {
@@ -165,16 +178,6 @@ footer .container {
   width: 80%;
 }
 
-footer .logo a {
-  color: #111;
-  font-family: Coiny, sans-serif;
-  font-size: 8vh;
-}
-
-footer .logo a:hover {
-  color: #666;
-}
-
 #menu-footer {
   color: white;
 }
@@ -184,8 +187,8 @@ footer .logo a:hover {
   width: 50px;
   height: 50px;
   margin: 30px auto;
-  background-image: url('images/social-icons.jpg');
-  background-size: 1000%;
+  /* background-image: url('images/social-icons.jpg');
+  background-size: 1000%; */
 }
 
 #menu-footer img {
@@ -193,24 +196,4 @@ footer .logo a:hover {
   width: 50px;
   height: 50px;
   margin: 30px auto;
-}
-
-#menu-footer img:hover {
-  opacity: 0.7;
-}
-
-.facebook {
-  background-position: -280px -55px;
-}
-
-.instagram {
-  background-position: -170px -55px;
-}
-
-.twitter {
-  background-position: -55px -55px;
-}
-
-.linkedin {
-  background-position: -280px -278px;
 }
