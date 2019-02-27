@@ -162,22 +162,27 @@ header {
   background-image: url('images/portfolio/newlife.png');
 }
 
-.popup-overlay {
+.setfree-popup-overlay, .dsparks-popup-overlay, .newlife-popup-overlay {
   visibility: hidden;
   position: absolute;
 }
 
-.popup-content {
+.setfree-popup-content, .dsparks-popup-content, .newlife-popup-content {
   width: 80%;
   margin: 0 auto;
   visibility: hidden;
 }
 
-.popup-content.active {
+.setfree-popup-overlay.active,
+.setfree-popup-content.active, 
+.dsparks-popup-overlay.active,
+.dsparks-popup-content.active,
+.newlife-popup-overlay.active,
+.newlife-popup-content.active {
   visibility: visible;
 }
 
-.popup-content img {
+.setfree-popup-content img {
   width: 100%;
 }
 
