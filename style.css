@@ -122,13 +122,12 @@ header {
 #bio {
   width: 100%;
   min-height: 200px;
-  text-align: center;
-  padding-top: 2em;
+  text-align: left;
+  padding: 2em;
 }
 
-#bio .body {
-  text-align: left;
-  padding: 2em 2em 2em 4em;
+#bio img {
+  /* width: 80%; */
 }
 
 #portfolio {
@@ -161,6 +160,25 @@ header {
 
 #newlife {
   background-image: url('images/portfolio/newlife.png');
+}
+
+.popup-overlay {
+  visibility: hidden;
+  position: absolute;
+}
+
+.popup-content {
+  width: 80%;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.popup-content.active {
+  visibility: visible;
+}
+
+.popup-content img {
+  width: 100%;
 }
 
 footer {
