@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#setfree").click(function() {
+	$("#setfree").on("click", function() {
 		$(".setfree-popup-overlay, .setfree-popup-content").addClass("active");
 	});
 });

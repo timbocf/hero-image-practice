@@ -163,14 +163,11 @@ header {
 }
 
 .setfree-popup-overlay, .dsparks-popup-overlay, .newlife-popup-overlay {
-  visibility: hidden;
-  position: absolute;
+  display: none;
 }
 
 .setfree-popup-content, .dsparks-popup-content, .newlife-popup-content {
-  width: 80%;
-  margin: 0 auto;
-  visibility: hidden;
+  display: none;
 }
 
 .setfree-popup-overlay.active,
@@ -179,7 +176,10 @@ header {
 .dsparks-popup-content.active,
 .newlife-popup-overlay.active,
 .newlife-popup-content.active {
-  visibility: visible;
+  display: block;
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .setfree-popup-content img {
