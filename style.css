@@ -94,28 +94,10 @@ header {
   text-align: left;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 42%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  /* font-size: 3vh; */
-}
-
-.hero-text button {
-  border: 1px solid #ddd;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.hero-text button:hover {
-  background: none;
-  color: #fff;
 }
 
 #bio {
@@ -152,10 +134,15 @@ header {
   padding: 4em 0;
 }
 
+.pf-section h5 {
+  color: #093275;
+}
+
 .pf-image, .pf-image img {
   display: block;
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 250px;
 }
 
 footer {
