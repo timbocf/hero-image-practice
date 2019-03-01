@@ -19,10 +19,6 @@ body, html {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1024px;
-}
-
 a, a:hover {
   text-decoration: none;
   color: #fff;
@@ -81,7 +77,7 @@ header.container {
 
 
 .topnav {
-  position: relative;
+  position: absolute;
   top: 30%;
   right: 5%;
   opacity: 0.8;
