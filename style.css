@@ -1,14 +1,3 @@
-/*
-Theme Name: Tim Rodgers Portfolio
-Theme URI: timrodgers.us
-Description: My web development portfolio.
-Version: 1.0
-Author: Tim Rodgers
-Author URI: timrodgers.us
-*/
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto');
 
 body, html {
@@ -79,11 +68,8 @@ header.container {
   color: #ddd;
 }
 
-
 .topnav {
-  position: relative;
-  top: 30%;
-  right: 5%;
+  margin-top: 1.5em;
   opacity: 0.8;
   display: block;
   float: left;
