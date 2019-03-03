@@ -9,7 +9,7 @@ body, html {
 }
 
 .container {
-  max-width: 1024px;
+  /* max-width: 1024px; */
 }
 
 a, a:hover {
@@ -55,18 +55,20 @@ header {
 }
 
 header.container {
-  width: 80%;
-  max-width: 1024px;
+  /* width: 80%; */
+  /* max-width: 1024px; */
 }
 
 .logo a img {
   height: 70px;
   max-height: 15vw;
+  margin-left: -2em;
 }
 
 .logo a:hover {
   color: #ddd;
 }
+
 
 .topnav {
   margin-top: 1.5em;
