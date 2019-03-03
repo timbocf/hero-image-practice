@@ -118,18 +118,10 @@ header.container {
   padding: 2em;
 }
 
-#bio img {
-  /* width: 80%; */
-}
-
 #portfolio {
   background-color: rgb(241, 231, 137);
   background-color: rgba(241, 231, 137, 0.5);
   width: 100%;
-}
-
-#portfolio .container {
-  /* width: 100%; */
 }
 
 #portfolio .row:nth-child(odd) {
