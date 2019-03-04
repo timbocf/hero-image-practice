@@ -77,6 +77,14 @@ header.container {
   float: left;
 }
 
+.topnav img, .topnav i, #menu-footer i {
+  margin-right: 0.5em;
+}
+
+.topnav i, #menu-footer i {
+  font-size: 5vw;
+}
+
 .topnav img {
   width: 25px;
   height: 25px;
@@ -166,7 +174,7 @@ footer {
   background-color: #222;
   color: white;
   line-height: 2em;
-  padding-top: 2%;
+  padding: 2%;
 }
 
 .top-scroll {
@@ -175,6 +183,7 @@ footer {
 
 #menu-footer {
   color: white;
+  margin-top: 10px;
 }
 
 #menu-footer img {
