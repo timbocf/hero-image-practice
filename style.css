@@ -8,10 +8,6 @@ body, html {
   overflow-x: hidden;
 }
 
-.container {
-  /* max-width: 1024px; */
-}
-
 a, a:hover {
   text-decoration: none;
   color: #fff;
@@ -46,6 +42,7 @@ header {
   width: 100%;
   margin: 0;
   min-height: 60px;
+  max-height: 100px;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   position: fixed;
@@ -54,24 +51,31 @@ header {
   z-index: 999;
 }
 
-header.container {
-  /* width: 80%; */
-  /* max-width: 1024px; */
-}
-
 .logo a img {
   height: 70px;
   max-height: 15vw;
-  margin-left: -2em;
+  /*margin: 0 0 0 -1em;*/
 }
 
 .logo a:hover {
   color: #ddd;
 }
 
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+  opacity: 1;
+}
+
+.fa-phone:hover {
+  color: #32CD32;
+}
 
 .topnav {
-  margin-top: 1.5em;
+  margin-top: 1.8em;
   opacity: 0.8;
   display: block;
   float: left;
@@ -82,7 +86,7 @@ header.container {
 }
 
 .topnav i, #menu-footer i {
-  font-size: 5vw;
+  font-size: calc(14px + 1vw);
 }
 
 .topnav img {
