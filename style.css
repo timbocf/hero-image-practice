@@ -38,6 +38,15 @@ h5 {
   font-size: 150%;
 }
 
+.modal-title {
+  text-align: left;
+}
+
+.modal-body img {
+  width: 100%;
+  max-width: 100%;
+}
+
 header {
   width: 100%;
   margin: 0;
@@ -54,7 +63,6 @@ header {
 .logo a img {
   height: 70px;
   max-height: 15vw;
-  /*margin: 0 0 0 -1em;*/
 }
 
 .logo a:hover {
@@ -160,7 +168,11 @@ header {
   max-height: 250px;
 }
 
-.pf-dsparks {
+.pf-left {
+  text-align: left;
+}
+
+.pf-right {
   text-align: right;
 }
 
