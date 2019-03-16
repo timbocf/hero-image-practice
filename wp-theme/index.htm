@@ -1,5 +1,59 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tim Rodgers is a web developer that builds responsive Wordpress themes. He lives in the Phoenix AZ area." />
+
+  <link rel="icon" type="image/jpg" href="images/dc-icon.jpg">
+
+  <title>Responsive Wordpress Developer | Tim Rodgers</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+
+        <div class="logo col-xs-6">
+          <a href="index.htm">
+            <img src="images/dcswoosh.png" class="img-responsive" alt="Divine Connections logo">
+          </a>
+        </div>
+
+        <div class="col-xs-6 topnav text-right">
+          <a href="http://github.com/timbocf">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="http://twitter.com/timbocf">
+            <i class="fab fa-twitter"></i>
+          </a>
+        <a href="http://www.linkedin.com/in/tim-rodgers-web-designer-developer
+  ">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="tel:+19032378475">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+
+      </div>
+    </div>
+  </header>
 
   <div class="hero-image" id="home">
     <div class="col-lg-6 text-left hero-text">
@@ -21,18 +75,19 @@
           <p>I like websites that get your attention but it is more important that it meets the needs of your organization.  I have experience building custom <strong>Wordpress</strong> themes from Photoshop designs that are <strong>"responsive"</strong>, meaning whether your users are viewing your site with a mobile device, a tablet or a desktop, the site adjusts to their screen size.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/tablet-desktop-mobile.png" class="img-responsive">
+          <img src="images/tablet-desktop-mobile.png" class="img-responsive" alt="tablet-desktop-mobile graphic">
         </div>
       </div>  
     </div>
   </div>
 
   <div id="portfolio" class="container-fluid">
+    <!-- <div class="container"> -->
 
       <div class="row">
 	<div class="pf-section col-md-6 col-md-offset-2">
           <div class="col-md-5 pf-image">
-            <img src="images/portfolio/setfree-thumb.jpg" class="img-responsive">
+            <img src="images/portfolio/setfree-thumb.jpg" class="img-responsive" alt="Set Free Band homepage">
 	  </div>
           <div class="col-md-5 col-md-offset-1">
 	    <h5>Set Free Band</h5>
@@ -50,7 +105,7 @@
             <p>Custom Wordpress theme for a client of 5pints Media.  One-page design with hero slider, parallax section, FAQ with dropdowns, testimonial gallery, contact form and embedded Google map widget.</p>
           </div>
 	  <div class="col-md-6 col-md-offset-1 pf-image">
-            <img src="images/portfolio/dsparks-thumb.jpg">
+            <img src="images/portfolio/dsparks-thumb.jpg" alt="Deborah Sparks Realty homepage">
           </div>
         </div>
       </div>
@@ -58,7 +113,7 @@
       <div class="row">
         <div class="pf-section col-md-6 col-md-offset-2">
           <div class="col-md-5 pf-image">
-            <img src="images/portfolio/newlife-thumb.jpg">
+            <img src="images/portfolio/newlife-thumb.jpg" alt="New Life Worship Center homepage">
 	  </div>
 	  <div class="col-md-5 col-md-offset-1">
 	    <h5>New Life Worship Center</h5>
@@ -69,33 +124,46 @@
       </div>
   </div>
 
-<!-- The Wordpress Loop -->
-<?php if ( have_posts() ) : ?>
-<?php while ( have_posts() ) : the_post(); ?>
-  <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="post-header">
-       <div class="date"><?php the_time( 'M j y' ); ?></div>
-       <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-       <div class="author"><?php the_author(); ?></div>
-    </div><!--end post header-->
-    <div class="entry clear">
-       <?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
-       <?php the_content(); ?>
-       <?php edit_post_link(); ?>
-       <?php wp_link_pages(); ?> </div>
-    <!--end entry-->
-    <div class="post-footer">
-       <div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
-    </div><!--end post footer-->
-    </div><!--end post-->
-<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
-    <div class="navigation index">
-       <div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
-       <div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
-    </div><!--end navigation-->
-<?php else : ?>
-<?php endif; ?>
-<!-- Loop End -->
+  <footer>
+    <div class="container">
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+      <div class="row">
+        <div class="col-xs-7">
+          <h5>Contact:</h5> 
+          Tim Rodgers
+          <br />
+          email: <a href="mailto: timbocf@gmail.com">timbocf@gmail.com</a>
+          <br />
+          phone: <a href="tel: +19032378475">903.237.8475</a>
+          <br />
+        </div>
+        <div class="col-xs-3 col-xs-offset-2 top-scroll text-right align-right">
+          <a href="#home">to top</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="menu-footer">
+
+        <div class="col-xs-8">
+          <a href="http://github.com/timbocf">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="http://twitter.com/timbocf">
+            <i class="fab fa-twitter"></i>
+          </a>
+        <a href="http://www.linkedin.com/in/tim-rodgers-web-designer-developer
+  ">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="tel:+19032378475">
+          <i class="fas fa-phone"></i>
+        </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
